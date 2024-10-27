@@ -1,0 +1,46 @@
+<meta charset="UTF-8" />
+<script>
+    /*
+    PROBLEMA: REMOVER SUV
+    Crie o seguinte array:
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    Pergunte ao usuário qual carro deseja REMOVER da lista.
+    Apresente a lista antiga de SUVs e a nova lista, após a remoção do veículo solicitado.
+    */
+
+    //ENTRADA
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let remocao = prompt("Qual carro deseja remover?").toLocaleUpperCase();
+    const carrosAntes = [...carrosSUV]
+    
+    if(remocao === "TIGGO"){
+    
+     carrosSUV.splice(0, 1)
+     alert(`Antes: ${carrosAntes}`);
+     alert(`Depois: ${carrosSUV}`);
+    }
+    else if(remocao === "SPORTAGE"){
+        carrosSUV.splice(1, 1)
+        alert(`Antes: ${carrosAntes}`);
+        alert(`Depois: ${carrosSUV}`);
+    }
+    else if(remocao === "TUCSON"){
+       carrosSUV.splice(2, 1)
+       alert(`Antes: ${carrosAntes}`);
+       alert(`Depois: ${carrosSUV}`);
+    }
+    else if(remocao === "ECOSPORT"){
+       carrosSUV.splice(3, 1)
+       alert(`Antes: ${carrosAntes}`);
+       alert(`Depois: ${carrosSUV}`);
+    }   
+    else{
+        alert("Insira algo valido")
+    }
+
+    //PROCESSAMENTO
+
+
+    //SAÍDA
+  
+</script>
